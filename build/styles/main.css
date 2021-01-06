@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLFj_V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5V1s.ttf) format('truetype');
+}
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+.j-center {
+  justify-content: center;
+}
+.j-end {
+  justify-content: flex-end;
+}
+.j-between {
+  justify-content: space-between;
+}
+.j-around {
+  justify-content: space-around;
+}
+.a-center {
+  align-items: center;
+}
+.text {
+  /* Colors */
+}
+.text.dark-green {
+  color: #017143;
+}
+.wrapper {
+  width: 1440px;
+  max-width: 96%;
+  margin: 0 auto;
+}
+.btn {
+  border: none;
+  background: #017143;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  border-radius: 40px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s all;
+  letter-spacing: 1.2px;
+  font-weight: 900;
+}
+.btn:hover {
+  background: #01a461;
+}
+.homepage {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.homepage .text-box {
+  max-width: 600px;
+}
+.homepage .text-box .title {
+  font-size: 3.5rem;
+}
+.homepage .text-box .description {
+  font-size: 1.2rem;
+  line-height: 2;
+  font-weight: 200;
+}
+.homepage .img-box .image-glass {
+  width: 100%;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.homepage .img-box .image-glass:hover {
+  transform: rotate(-20deg);
+}
+.homepage .glasses {
+  position: absolute;
+  left: 44%;
+  bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+.homepage .glasses .glass {
+  transition: 0.3s all;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.homepage .glasses .glass:hover {
+  transform: translateY(-20px);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.header .navbar {
+  list-style: none;
+}
+.header .navbar-menu-item {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #000000;
+}
+.header .navbar-menu-item:hover {
+  color: #017143;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+a {
+  text-decoration: none;
+}

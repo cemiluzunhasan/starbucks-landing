@@ -1,0 +1,21 @@
+.header {
+  display        : flex;
+  justify-content: space-between;
+  padding        : 20px 0;
+
+  .navbar {
+    list-style: none;
+
+    &-menu-item {
+      display     : inline-block;
+      margin-right: 20px;
+      cursor      : pointer;
+      transition  : all .3s;
+      color       : @colors[black];
+
+      &:hover {
+        color: @colors[dark-green];
+      }
+    }
+  }
+}
