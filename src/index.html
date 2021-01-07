@@ -11,6 +11,7 @@
 
 <body>
   <!-- @import "Header.html" -->
+  <div class="circle"></div>
   <div class="homepage container">
     <div class="wrapper">
       <div class="d-flex j-between a-center">
@@ -32,5 +33,10 @@
     </div>
   </div>
 </body>
-
+<script>
+  function imageChange(image, color) {
+    document.querySelector('.image-glass').src = image;
+    document.querySelector('.circle').style.background = color;
+  }
+</script>
 </html>

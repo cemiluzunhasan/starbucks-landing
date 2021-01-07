@@ -25,6 +25,7 @@
   </div>
 </header>
 <!-- import end -->
+  <div class="circle"></div>
   <div class="homepage container">
     <div class="wrapper">
       <div class="d-flex j-between a-center">
@@ -44,13 +45,18 @@
       </div>
       <!-- import "Home/Glasses.html" -->
 <div class="glasses">
-  <img src="../../assets/img/thumb1.png" class="glass">
-  <img src="../../assets/img/thumb2.png" class="glass">
-  <img src="../../assets/img/thumb3.png" class="glass">
+  <img src="../../assets/img/thumb1.png" class="glass" onclick="imageChange('assets/img/img1.png', '#017143')">
+  <img src="../../assets/img/thumb2.png" class="glass" onclick="imageChange('assets/img/img2.png', '#eb7495')">
+  <img src="../../assets/img/thumb3.png" class="glass" onclick="imageChange('assets/img/img3.png', '#d752b1')">
 </div>
 <!-- import end -->
     </div>
   </div>
 </body>
-
+<script>
+  function imageChange(image, color) {
+    document.querySelector('.image-glass').src = image;
+    document.querySelector('.circle').style.background = color;
+  }
+</script>
 </html>
