@@ -152,15 +152,19 @@
     left: 0%;
     bottom: 10px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
     width: 100%;
   }
   .homepage .glasses .glass {
     max-width: 8%;
-    margin: 0 10px;
+  }
+  .homepage .glasses .glass:hover {
+    transform: none;
   }
   .homepage .image-glass {
     max-width: 30% !important;
+    height: 145px;
   }
   .homepage .img-box {
     display: flex;
@@ -198,7 +202,7 @@
 }
 .circle {
   position: absolute;
-  bottom: 0;
+  bottom: -40%;
   right: 0;
   width: 100%;
   height: 100%;
@@ -208,8 +212,7 @@
 }
 @media screen and (max-width: 992px) {
   .circle {
-    max-width: 100%;
-    clip-path: circle(40% at center bottom);
+    display: none;
   }
 }
 body {

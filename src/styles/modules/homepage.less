@@ -64,25 +64,30 @@
 
   .homepage {
     .glasses {
-      position       : absolute;
-      left           : 0%;
-      bottom         : 10px;
-      display        : flex;
-      justify-content: center;
-      width          : 100%;
+      position      : absolute;
+      left          : 0%;
+      bottom        : 10px;
+      display       : flex;
+      flex-direction: column;
+      align-items   : flex-end;
+      width         : 100%;
 
       .glass {
         max-width: 8%;
-        margin   : 0 10px;
+
+        &:hover {
+          transform: none;
+        }
       }
     }
 
     .image-glass {
       max-width: 30% !important;
+      height   : 145px;
     }
 
     .img-box {
-      display : flex;
+      display        : flex;
       justify-content: center;
     }
   }
