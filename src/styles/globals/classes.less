@@ -7,3 +7,14 @@
 .j-around { justify-content: space-around; }
 
 .a-center { align-items: center; }
+
+@media screen and (max-width: 992px) {
+  .d-flex {
+    display: flex;
+    flex-direction: column;
+
+    &.a-center {
+      align-items: center;
+    }
+  }
+}

@@ -47,6 +47,15 @@
 .a-center {
   align-items: center;
 }
+@media screen and (max-width: 992px) {
+  .d-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .d-flex.a-center {
+    align-items: center;
+  }
+}
 .text {
   /* Colors */
 }
@@ -56,7 +65,12 @@
 .wrapper {
   width: 1440px;
   max-width: 96%;
-  margin: 0 auto;
+  margin: auto;
+}
+@media screen and (max-width: 992px) {
+  .wrapper.d-flex {
+    align-items: flex-start;
+  }
 }
 .btn {
   border: none;
@@ -76,6 +90,13 @@
 }
 .btn:hover {
   background: #01a461;
+}
+@media screen and (max-width: 992px) {
+  .btn {
+    font-size: 0.7rem;
+    height: 40px;
+    width: 130px;
+  }
 }
 .homepage {
   height: 80vh;
@@ -118,6 +139,34 @@
 .homepage .glasses .glass:hover {
   transform: translateY(-20px);
 }
+@media screen and (max-width: 992px) {
+  .homepage .text-box .title {
+    font-size: 2.2rem;
+    margin: 10px 0;
+  }
+  .homepage .text-box .description {
+    font-size: 0.7rem;
+  }
+  .homepage .glasses {
+    position: absolute;
+    left: 0%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .homepage .glasses .glass {
+    max-width: 8%;
+    margin: 0 10px;
+  }
+  .homepage .image-glass {
+    max-width: 30% !important;
+  }
+  .homepage .img-box {
+    display: flex;
+    justify-content: center;
+  }
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -136,6 +185,17 @@
 .header .navbar-menu-item:hover {
   color: #017143;
 }
+@media screen and (max-width: 992px) {
+  .header {
+    padding: 10px 0;
+  }
+  .header .logo {
+    max-width: 60px;
+  }
+  .header .navbar {
+    display: none !important;
+  }
+}
 .circle {
   position: absolute;
   bottom: 0;
@@ -145,6 +205,12 @@
   background: #017143;
   z-index: -1;
   clip-path: circle(40% at right 70%);
+}
+@media screen and (max-width: 992px) {
+  .circle {
+    max-width: 100%;
+    clip-path: circle(40% at center bottom);
+  }
 }
 body {
   font-family: 'Poppins', sans-serif;
